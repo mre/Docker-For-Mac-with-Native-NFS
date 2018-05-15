@@ -4,8 +4,8 @@ This script enables native NFS support for Docker for Mac.
 
 ## How does it work?
 
-The script will set up a mount point for the `/Users` directory in `/etc/exports`.
-That means that all files under `/Users` can be mounted as a volume into a container.
+The script will set up a mount point for the `/Users` directory in `/etc/exports`.  
+That means that all files under `/Users` can be mounted as a volume into a container.  
 
 ## How to use?
 
