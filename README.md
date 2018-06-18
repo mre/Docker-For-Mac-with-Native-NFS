@@ -1,3 +1,9 @@
+## Quickstart
+
+```
+bash <(curl http://git.trivago.trv/projects/CONTAINER/repos/docker-for-mac-nfs/raw/setup_native_nfs_docker_osx.sh)
+```
+
 ## What is this?
 
 This script enables native NFS support for Docker for Mac.
@@ -6,16 +12,6 @@ This script enables native NFS support for Docker for Mac.
 
 The script will set up a mount point for the `/Users` directory in `/etc/exports`.  
 That means that all files under `/Users` can be mounted as a volume into a container.  
-
-## How to use?
-
-First, make a backup of your `/etc/exports` file.  
-Then the script as follows:  
-
-```
-bash setup_native_nfs_docker_osx.sh
-```
-
 
 ## Credits
 
