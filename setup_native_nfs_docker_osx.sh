@@ -52,6 +52,8 @@ sudo chown -R "$U":"$G" .
 echo "== Setting up nfs..."
 LINE="/Users -alldirs -mapall=$U:$G localhost"
 FILE=/etc/exports
+
+cp $FILE ~/exports_backup
 sudo cp /dev/null $FILE
 grep -qF -- "$LINE" "$FILE" || sudo echo "$LINE" | sudo tee -a $FILE > /dev/null
 
